@@ -6,7 +6,7 @@ import math
 def f6_a(x, k):
     return x ** 2 + k
 
-def f6_a(x, k):
+def f6_b(x, k):
     return (x + k) ** 2
 
 def f6_c(x, k):
@@ -33,9 +33,9 @@ def f6_i(x):
 def f6_j(x):
     return math.sqrt(x + 1)
 
-# def showFunc():
-#     plt.legend()
-#     plt.show()
+def showFunc():
+    plt.legend()
+    plt.show()
 
 
 k = [2, 4, 6, 8, 10, 12]
@@ -48,8 +48,7 @@ for ki in k:
     plt.plot(x, y, label = "k=" + str(ki) )
 
 plt.title("Cau 6a")
-plt.legend()
-plt.show()
+showFunc()
 
 
 
@@ -63,8 +62,7 @@ for ki in k:
     plt.plot(x, y, label = "k =" + str(ki))
 
 plt.title("Cau 6b")
-plt.legend()
-plt.show()
+showFunc()
 
 
 k = [1/3, 1, 3, 6]
