@@ -45,7 +45,7 @@ for ki in k:
     y = []
     for xi in x:
         y.append(f6_a(xi, ki))
-    plt.plot(x, y, label = "k=" + str(ki) )
+    plt.plot(x, y, label = " k = " + str(ki) )
 
 plt.title("Cau 6a")
 showFunc()

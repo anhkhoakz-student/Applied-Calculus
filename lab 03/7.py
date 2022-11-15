@@ -8,25 +8,21 @@ def f7_a(x):
 def f7_b(x):
     return x ** 2 + (x / 2)
 
-def showFunc(x, y):
+def drawFunc(fx, x1, x2):
+    x = np.arange(x1, x2 + 0.1, 0.1)
+    y = np.array(list(map(fx, x)))
     plt.grid()
     plt.plot(x, y)
     plt.show()
 
 
 #7a
-x = np.arange(-10, 10, 0.1)
-y = np.array(list(map(f7_a, x)))
-
 plt.title('Cau 7a')
-showFunc(x, y)
+drawFunc(f7_a, -50, 50)
 print("function f(x)_7a is one to one function")
 
 
 #7b
-x = np.arange(-10, 10, 0.1)
-y = np.array(list(map(f7_b, x)))
-
 plt.title('Cau 7b')
-showFunc(x, y)
+drawFunc(f7_b, -50, 50)
 print("function f(x)_7b is not one to one function")
