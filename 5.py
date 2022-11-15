@@ -9,7 +9,7 @@ def f_2(x):
     return -3*math.sqrt(1-math.sqrt(abs(x)/2))
 
 def draw_f_1():
-    x_array = np.arange(-2, 2, 0.1)
+    x_array = np.arange(-2, 2, 0.000001)
     y_array = list(map(f_1, x_array))
     plt.plot(x_array, y_array, color = 'magenta')
 
