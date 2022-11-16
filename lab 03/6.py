@@ -48,7 +48,6 @@ k = [2, 4, 6, 8, 10, 12]
 x = np.arange(-10, 10, 0.1)
 
 loopsFunc(f6_a, x, k)
-
 plt.title("Cau 6a")
 showFunc()
 
