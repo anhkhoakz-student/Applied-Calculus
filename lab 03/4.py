@@ -21,38 +21,28 @@ def fx_4m(x):
 def fx_4n(x):
     return math.sqrt(abs(-x))
 
-def showFunc(x_array, y_array):
+def showFunc(fx):
+    x_array = np.arange(-10, 10.1, 0.1)
+    y_array = list( map(fx, x_array))
     plt.plot(x_array, y_array)
     plt.grid()
     plt.show()
 
 
-x_array = np.arange(-10, 10.1, 0.1)
-y_array = list( map(fx_4i, x_array))
-showFunc(x_array, y_array)
+showFunc(fx_4i)
 # print("4i, f(x) is decreasing as x-values belong to (-oo, +oo)")
 
 
-x_array = np.arange(-10, 10.1, 0.1)
-y_array = list(map(fx_4j, x_array))
-showFunc(x_array, y_array)
+showFunc(fx_4j)
 
 
-x_array = np.arange(-10, 10.1, 0.1)
-y_array = list(map(fx_4k, x_array))
-showFunc(x_array, y_array)
+showFunc(fx_4k)
 
 
-x_array = np.arange(-10, 10.1, 0.1)
-y_array = list(map(fx_4l, x_array))
-showFunc(x_array, y_array)
+showFunc(fx_4l)
 
 
-x_array = np.arange(-10, 10.1, 0.1)
-y_array = list(map(fx_4m, x_array))
-showFunc(x_array, y_array)
+showFunc(fx_4m)
 
 
-x_array = np.arange(-10, 10.1, 0.1)
-y_array = list(map(fx_4n, x_array))
-showFunc(x_array, y_array)
+showFunc(fx_4n)
