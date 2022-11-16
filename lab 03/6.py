@@ -37,15 +37,17 @@ def showFunc():
     plt.legend()
     plt.show()
 
+def loopsFunc(fx, x, k):
+    for ki in k:
+        y = []
+        for xi in x:
+            y.append(fx(xi, ki))
+        plt.plot(x, y, label = "k = " + str(ki))
 
 k = [2, 4, 6, 8, 10, 12]
 x = np.arange(-10, 10, 0.1)
 
-for ki in k:
-    y = []
-    for xi in x:
-        y.append(f6_a(xi, ki))
-    plt.plot(x, y, label = " k = " + str(ki) )
+loopsFunc(f6_a, x, k)
 
 plt.title("Cau 6a")
 showFunc()
@@ -55,12 +57,7 @@ showFunc()
 k = [2, 4, 6, 8, 10, 12]
 x = np.arange(-10, 10, 0.1)
 
-for ki in k:
-    y = []
-    for xi in x:
-        y.append(f6_b(xi, ki))
-    plt.plot(x, y, label = "k =" + str(ki))
-
+loopsFunc(f6_b, x, k)
 plt.title("Cau 6b")
 showFunc()
 
@@ -68,12 +65,7 @@ showFunc()
 k = [1/3, 1, 3, 6]
 x = np.arange(1, 50, 0.1)
 
-for ki in k:
-    y = []
-    for xi in x:
-        y.append(f6_c(xi, ki))
-    plt.plot(x, y, label = 'k = ' + str(ki))
-
+loopsFunc(f6_c, x, k)
 plt.title('Cau 6c')
 showFunc()
 
